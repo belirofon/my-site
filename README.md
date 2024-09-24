@@ -13,46 +13,6 @@
 ## Структура проекта
 
 Проект организован с использованием FSD-подхода для улучшенной модульности и читаемости кода.
-├── src
-|  ├── app
-|  |  ├── App.tsx
-|  |  ├── index.css
-|  |  ├── index.tsx
-|  |  ├── routes
-|  |  |  └── index.tsx
-|  |  └── styles
-|  ├── entities
-|  ├── features
-|  ├── pages
-|  |  └── HomePage
-|  |     ├── index.tsx
-|  |     └── ui
-|  ├── processes
-|  ├── shared
-|  |  ├── assets
-|  |  |  └── logo.webp
-|  |  └── lib
-|  |     └── classNames.ts
-|  ├── vite-env.d.ts
-|  └── widgets
-|     └── Header
-|        ├── model
-|        |  └── types.ts
-|        └── ui
-|           └── Header.tsx
-src/ 
-├── app/ # Файл инициализации приложения 
-| └── styles/ # Глобальные стили
-├── pages/ # Страницы проекта 
-├── routes/ # Настройка маршрутов 
-│ └── routes.tsx 
-├── widgets/ # UI-компоненты, такие как Header 
-│ └── Header/ 
-│ ├── ui/Header.tsx 
-├── shared/ # Переиспользуемые элементы и утилиты 
-│ ├── assets/ # Статичные файлы, такие как логотипы и иконки 
-│ └── lib/ # Утилитарные функции 
-
 
 
 ## Установка и запуск проекта
