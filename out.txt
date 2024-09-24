@@ -1,0 +1,46 @@
+E:\work\projects\my-site
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── prettier.config.js
+├── public
+|  └── favicon.ico
+├── README.md
+├── src
+|  ├── app
+|  |  ├── App.tsx
+|  |  ├── index.css
+|  |  ├── index.tsx
+|  |  ├── routes
+|  |  |  └── index.tsx
+|  |  └── styles
+|  ├── entities
+|  ├── features
+|  ├── pages
+|  |  └── HomePage
+|  |     ├── index.tsx
+|  |     └── ui
+|  ├── processes
+|  ├── shared
+|  |  ├── assets
+|  |  |  └── logo.webp
+|  |  └── lib
+|  |     └── classNames.ts
+|  ├── vite-env.d.ts
+|  └── widgets
+|     └── Header
+|        ├── model
+|        |  └── types.ts
+|        └── ui
+|           └── Header.tsx
+├── tailwind.config.js
+├── tsconfig.app.json
+├── tsconfig.json
+├── tsconfig.node.json
+└── vite.config.ts
+
+directory: 759 file: 4606
+
+ignored: directory (24)
