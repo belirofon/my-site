@@ -1,11 +1,12 @@
 import './index.css'
+import AppRoutes from './routes'
 
 function App() {
 
   return (
-    <>
-     Page
-    </>
+    <div className="App">
+    <AppRoutes />
+  </div>
   )
 }
 

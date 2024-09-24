@@ -1,50 +1,66 @@
-# React + TypeScript + Vite
+# Проект "Мой сайт"
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Это проект лендинга с использованием **React**, **TypeScript**, архитектуры **FSD (Feature-Sliced Design)** и **Tailwind CSS** для стилизации. В проекте также реализована система маршрутизации на базе **React Router**.
 
-Currently, two official plugins are available:
+## Стек технологий
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React** — библиотека для построения пользовательских интерфейсов.
+- **TypeScript** — строго типизированный язык, расширяющий возможности JavaScript.
+- **Tailwind CSS** — CSS-фреймворк для создания адаптивных пользовательских интерфейсов.
+- **React Router** — маршрутизация для одностраничных приложений на React.
+- **FSD (Feature-Sliced Design)** — модульная архитектура для организации файлов в проекте.
 
-## Expanding the ESLint configuration
+## Структура проекта
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Проект организован с использованием FSD-подхода для улучшенной модульности и читаемости кода.
+src/ ├── app/ # Файл инициализации приложения ├── pages/ # Страницы проекта │ ├── AboutPage/ # Страница "Обо мне" │ ├── ProjectsPage/ # Страница с проектами │ ├── ContactsPage/ # Страница с контактами │ └── ServicesPage/ # Страница с услугами ├── routes/ # Настройка маршрутов │ └── routes.tsx ├── widgets/ # UI-компоненты, такие как Header │ └── Header/ │ ├── ui/Header.tsx ├── shared/ # Переиспользуемые элементы и утилиты │ ├── assets/ # Статичные файлы, такие как логотипы и иконки │ └── lib/ # Утилитарные функции └── styles/ # Глобальные стили
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Установка и запуск проекта
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. Склонируйте репозиторий:
+    ```bash
+    git clone https://github.com/ваш-репозиторий.git
+    ```
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+2. Установите зависимости:
+    ```bash
+    npm install
+    ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+3. Запустите проект:
+    ```bash
+    npm run dev
+    ```
+
+Проект будет запущен на [http://localhost:3000](http://localhost:3000) или другом указанном порту.
+
+## Скрипты
+
+- `npm run dev` — запуск проекта в режиме разработки.
+- `npm run build` — сборка проекта для продакшена.
+- `npm run lint` — проверка кода с помощью ESLint.
+- `npm run format` — форматирование кода с помощью Prettier.
+
+## Функционал
+
+- **Адаптивная верстка**: Проект использует Tailwind CSS для создания интерфейсов, адаптированных под любые устройства.
+- **Маршрутизация**: С помощью React Router реализована навигация по страницам:
+  - **Обо мне**
+  - **Мои проекты**
+  - **Мои контакты**
+  - **Мои услуги**
+
+## Адаптивность
+
+Проект адаптируется под разные разрешения экранов с использованием медиазапросов. Размеры шрифтов, отступов и элементов меняются для корректного отображения как на мобильных устройствах, так и на десктопах.
+
+## Дополнительные библиотеки
+
+- **react-router-dom**: Для реализации маршрутизации.
+- **ESLint и Prettier**: Для контроля качества кода и его форматирования.
+
+## Лицензия
+
+Этот проект распространяется под лицензией MIT. Подробности в файле [LICENSE](./LICENSE).
+
